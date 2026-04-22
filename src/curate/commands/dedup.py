@@ -93,8 +93,8 @@ def dedup(
     to actually delete files.
 
     Examples:
-        curate dedup /media/drive --dry-run
-        curate dedup /media/drive --execute --strategy newest
+        curate dedup /media/drive              # Dry-run mode (safe)
+        curate dedup /media/drive --execute    # Actually delete files
         curate dedup . --include "*.jpg" --include "*.png"
     """
     # Setup logging

@@ -92,5 +92,13 @@ from curate.commands.consolidate import consolidate as consolidate_cmd
 cli.add_command(consolidate_cmd)
 
 
+# ---------------------------------------------------------------------------
+# curate rename
+# ---------------------------------------------------------------------------
+from curate.commands.rename import rename as rename_cmd
+
+cli.add_command(rename_cmd)
+
+
 if __name__ == "__main__":
     cli()
