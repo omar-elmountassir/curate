@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# curate — File system curation CLI wrapper
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+exec uv run --project "$SCRIPT_DIR" "$SCRIPT_DIR/src/curate/cli.py" "$@"
